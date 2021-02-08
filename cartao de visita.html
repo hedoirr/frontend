@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>CASA DAS BATERIAS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <style>
+        .tudo {
+            width: 100%;
+            background-image: url(img/fundo2.jpeg);
+        }
+
+        .mySlides {
+            width: auto;
+            margin: 0;
+            position: relative;
+            top: 50%;
+            }
+
+        .header {
+            /* cabeçalho */
+            background-color: ;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            left: 50%;
+        }
+
+
+        .lateralEsquerda {
+            background-color: pink;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 10%;
+            color: white;
+            left: 50%;
+        }
+
+        .main {
+            float: left;
+            width: 100%;
+            padding: 0 20%;
+            text-align: justify;
+            left: 50%;
+        }
+
+
+        .footer {
+            background-color:whitesmoke;
+            padding: 5%;
+            margin-top: 7px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            align-self: justify-self: start;;
+            text-align: left;
+            left: 50%;
+
+        }
+        .whatsapp {
+            padding: 7px;
+            width: 70%;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            align-self: center;
+            left: 50%;
+            }
+        .whatsapp2 {
+            padding: 7px;
+            width: 20%;
+            left: 68%;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            align-self: center;
+            left: 50%;
+            }
+
+		body {
+			width: 100%;
+			font-family: Arial;
+            
+		}
+		
+		.box {
+			width: 380px;
+			height: auto;
+			float: left;
+            
+		}
+		
+		div#a-b-c {
+			width: 1050px;
+			height: auto;
+			margin: auto;
+		}
+		
+		div#a-b-c h2 {
+		text-align: justify;
+		display: inline;
+        left: 50%;
+
+		}
+		
+		div#a-b-c p {
+		text-align: justify;
+		display: block;
+        left: 50%;
+
+		}
+		.left {
+			margin-left: 20px;
+		}
+
+        @media only screen and (max-width: 400px; ) 
+            {.mySlides,.box,.footer,.header,.lateralEsquerda,.left,.main,.tudo,.whatsapp,.whatsapp2
+            { max-width: 100%;}
+            }
+    </style>
+         
+</head>
+
+<body>
+<div class="tudo">
+    <div class="header">
+        <div class="row">
+            <img src="img/2.jpg" width="100%">
+        </div>
+
+        <div style="overflow:auto">
+            <div id="a-b-c">
+		
+                <div class="box">
+                
+                    <img style="width:20%; align-self: initial;" src="img/1.1.png"/>
+                    <p>Família Andreussi desde de 1965, com mais de 50 anos de experiência em distribuição de baterias dos setor
+                        automotivo, aplicando uma produção qualitativa, garantindo ao cliente a certeza de poder contar com uma empresa
+                        compromissada com o profissionalismo entregando o melhor produto do mercado.
+                    </p>
+                
+                </div>
+            </div>
+            <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="img/heliar-logo.png" style="width:100%">
+                <img class="mySlides" src="img/moura-logo.png" style="width:100%">
+                <img class="mySlides" src="img/strada-logo.png" style="width:100%">
+            </div>
+            
+            <script>
+                var myIndex = 0;
+                carousel();
+            
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+            <div class="menu">
+                <div class="content">
+                    <a href="https://api.whatsapp.com/send?phone=5567981330010">
+                    <img class="whatsapp" src="img/whatsapp2.png"></a>
+                </div>
+
+                <div class="email">
+                    <a href="tel:06733247652"></a>
+                    <img class="whatsapp2" src="img/phone.png"></a>
+                </div>
+
+            </div>
+
+            <div>
+                <footer class="footer">
+                    <b>REDE DE LOJAS PARA <br> MELHOR ATENDER</b>
+                    <br><br>
+                    
+                    Loja 1 -  R. General Melo, 92 - Centro, Campo Grande/MS, 79002-241 <br>
+                    <a href="tel:06733247652"> Tel. (67)3324-7652</a> <br> <br>
+
+                    Loja 2 -  Av. das Bandeiras, 988 - Vila Valparaíso, Campo Grande/MS, 79080-001<br> 
+                    <a href="tel:06733424169"> Tel. (67) 3342-4169</a> <br><br>
+
+                    Loja 3 - Av. Júlio de Castilho, 1830 - Lar do Trab., Campo Grande/MS, 79009-095 <br>
+                    <a href="tel:06733616878"> Tel. (67) 3361-6878</a><br>
+                </footer>
+            </div>
+
+        </div>
+</div>
+</body>
+
+</html>
